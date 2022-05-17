@@ -1,0 +1,12 @@
+@mixin btn {
+  font-size: 1.5rem;
+  background-color: aqua;  
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+}
+
+@mixin heading-secondary {
+  font-size: 3rem;
+  padding-bottom: 10rem;
+}
+

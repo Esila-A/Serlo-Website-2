@@ -1,0 +1,147 @@
+.contact {
+  // width: 90%;
+  // max-width: 100vw;
+  // margin: 0 auto;
+  // color: map.get($colors, font-second-color);
+  padding: 6rem 0;
+  // font-family: $font-montserrat;
+
+  &_heading {
+    text-align: center;
+    padding-top: 4rem;
+
+    &--h2 {
+      font-size: 2.2rem;
+      padding-bottom: 2rem;
+    }
+
+    &--h3 {
+      font-size: 1.7rem;
+    }
+  }
+
+  &_information {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 5rem;
+
+    &--name {
+      font-size: 2.5rem;
+      padding-bottom: 1rem;
+    }
+
+    &--nip {
+      font-size: 1.5rem;
+      padding-bottom: 6rem;
+    }
+
+    &--details {
+      display: flex;
+      align-items: center;
+      padding-bottom: 2.5rem;
+    }
+
+    &--paragraph {
+      font-size: 1.5rem;
+    }
+
+    &--link {
+      text-decoration: none;
+      font-size: 1.2rem;
+      color: palevioletred;
+      border: palevioletred;
+      border-radius: 30px;
+      padding: 5px 20px;
+
+      &:hover {
+        box-shadow: inset 0 0 5px rgb(147, 173, 234);
+      }
+
+      &:active {
+        box-shadow: inset 0 0 5px rgb(104, 124, 169);
+      }
+    }
+
+    .icon {
+      padding-right: 1rem;
+      font-size: 2rem;
+      color: palevioletred;
+    }
+  }
+}
+
+@media (max-width: 792px) {
+  .contact {
+
+    margin: 0 1rem;
+
+    &_heading {
+      text-align: center;
+      padding-top: 4rem;
+
+      // &--h2 {
+      //   font-size: 2.2rem;
+      //   padding-bottom: 2rem;
+      // }
+
+      &--h3 {
+        font-size: 1.2rem;
+      }
+    }
+
+    &_information {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      margin: 0;
+
+      &--name {
+        font-size: 2rem;
+        padding-bottom: 1rem;
+        padding-top: 3rem;
+        text-align: center;
+      }
+
+      &--nip {
+        font-size: 1.2rem;
+        padding-bottom: 6rem;
+        text-align: center;
+      }
+
+      &--details {
+        display: flex;
+        align-items: center;
+        padding-bottom: 2.5rem;
+      }
+
+      &--paragraph {
+        font-size: 1.2rem;
+      }
+
+      &--link {
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: palevioletred;
+        border: 2px solid palevioletred;
+        border-radius: 30px;
+        padding: 5px 20px;
+
+        &:hover {
+          box-shadow: inset 0 0 5px rgb(147, 173, 234);
+        }
+
+        &:active {
+          box-shadow: inset 0 0 5px rgb(104, 124, 169);
+        }
+      }
+
+      .icon {
+        padding-right: 1rem;
+        font-size: 2rem;
+        color: aqua;
+      }
+    }
+  }
+}

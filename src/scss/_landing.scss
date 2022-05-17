@@ -1,0 +1,18 @@
+.landing {
+  padding: 10rem 10rem 0 10rem;
+  text-align: center;
+
+  &_heading {
+    font-size: 4rem;
+    padding-bottom: 3rem;
+  }
+
+  &_paragraph {
+    font-size: 2rem;
+    padding-bottom: 3rem;
+  }
+
+  &_button {
+    @include btn;
+  }
+}

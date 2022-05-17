@@ -1,0 +1,78 @@
+@use "sass:map";
+
+.header {
+  padding: 0 5rem;
+  height: 9vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 5px 10px grey;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: rgb(206, 170, 182);
+
+  .navigation {
+    display: flex;
+    gap: 10vw;
+
+    &_link {
+      text-decoration: none;
+      font-size: 1.2rem;
+      border-bottom: 3px solid transparent;
+      outline: 0;
+          color: rgb(48, 48, 48);
+
+      &:hover {
+        color: aqua;
+      }
+
+      &:active {
+        color: yellow;
+      }
+    }
+
+    .active {
+      color: red;
+    }
+  }
+
+  .mobileNavigation {
+    display: none;
+  }
+
+
+  @media (max-width: 792px) {
+
+    padding: 0 2rem;
+
+    .computerNavigation {
+      display: none;
+    }
+
+    .mobileNavigation {
+      display: flex;
+      height: 9vh;
+
+      .icon {
+        width: 100%;
+        cursor: pointer;
+        font-size: 2.2rem;
+        align-self: center;
+      }
+
+      .navigation {
+        box-sizing: border-box;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        top: 9vh;
+        width: 100%;
+        padding: 4rem;
+        gap: 6rem;
+      }
+    }
+  }
+}
