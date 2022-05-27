@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useCallback } from "react";
-// import { send } from "emailjs-com";
+import React, { useState, useEffect, useCallback, useRef } from "react";
+import emailjs from "@emailjs/browser";
 import {
   GoogleReCaptchaProvider,
   useGoogleReCaptcha,
@@ -17,7 +17,7 @@ const SubmitButton = () => {
 
     const token = await executeRecaptcha("yourAction");
     // Do whatever you want with the token
-  }, []);
+  }, [executeRecaptcha]);
 
   // You can use useEffect to trigger the verification as soon as the component being loaded
   useEffect(() => {
@@ -32,7 +32,7 @@ const SubmitButton = () => {
 };
 
 const Form = () => {
-  const [form, setForm] = useState({
+  const [inputs, setInputs] = useState({
     name: "",
     email: "",
     message: "",
@@ -40,7 +40,7 @@ const Form = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setForm((prevState) => {
+    setInputs((prevState) => {
       return {
         ...prevState,
         [name]: value,
@@ -48,38 +48,45 @@ const Form = () => {
     });
   };
 
+  const form = useRef();
+  
   const [notice, setNotice] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // send(
-    //   "service_0ru1bbl",
-    //   "template_ys9ci8a",
-    //   form,
-    //   "user_y5LyArSJd8PVIrx90Mux4"
-    // )
-    //   .then(() => {
-    //     setNotice("success");
-    //   })
-    //   .catch(() => {
-    //     setNotice("error");
-    //   });
+    emailjs
+      .sendForm(
+        "service_zqq2tfa",
+        "template_dyq3knc",
+        form.current,
+        "hJJ7Cn_r4m0lT7JkG"
+      )
+      .then(() => {
+        setNotice("success");
+      })
+      .catch(() => {
+        setNotice("error");
+      });
   };
 
   return (
-    <GoogleReCaptchaProvider reCaptchaKey="">
+    <GoogleReCaptchaProvider reCaptchaKey="6LdkBP8fAAAAAGQtHub8phYX-8t7Ze0zQvvDxgEw">
       <div className="attempt" id="form">
         <div className="form">
-          {/* <h2 className="form_header">FORMULARZ KONTAKTOWY</h2> */}
-          <form id="form" className="form_content" onSubmit={handleSubmit}>
+          <form
+            ref={form}
+            id="form"
+            className="form_content"
+            onSubmit={handleSubmit}
+          >
             <label className="requests">
               <p className="text">Imię</p>
               <input
                 type="text"
                 name="name"
                 placeholder="wpisz swoje imię"
-                value={form.name}
+                value={inputs.name}
                 onChange={handleChange}
                 className="input-fields input-fields--one"
                 required={true}
@@ -91,7 +98,7 @@ const Form = () => {
                 type="email"
                 name="email"
                 placeholder="wpisz swój email"
-                value={form.email}
+                value={inputs.email}
                 onChange={handleChange}
                 className="input-fields input-fields--one"
                 required={true}
@@ -102,7 +109,7 @@ const Form = () => {
               <textarea
                 name="message"
                 placeholder="wpisz wiadomość"
-                value={form.message}
+                value={inputs.message}
                 onChange={handleChange}
                 className="input-fields input-fields--two"
                 required={true}

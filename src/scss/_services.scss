@@ -1,36 +1,58 @@
+@use "sass:map";
+
 .services {
   text-align: center;
-  padding: 10rem 13rem 0 13rem;
+  padding: 6rem 0 5rem 0;
 
   .container {
-    height: 45vh;
-    width: 35vw
+    height: 65vh;
   }
 
   &_heading {
-    @include heading-secondary;
+    @include heading;
   }
 
   &_heading-two {
-    font-size: 2rem;
+    @include heading;
     padding-top: 8rem;
-    padding-bottom: 6rem;
   }
 
   &_content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 2rem;
+    margin-bottom: 5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    box-shadow: 0 0 50px -43px;
 
     &--image {
       height: 100%;
       width: 100%;
       object-fit: cover;
+      background-clip: content-box;
     }
 
     &--heading {
-      font-size: 2.5rem;
+      font-family: $font-heading;
+      font-size: 2.8rem;
+      margin-bottom: 3rem;
+      border-bottom: 5px solid map.get($colors, accent-color);
+      letter-spacing: .2rem;
+    }
+
+    &--details {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      li {
+        font-size: 1.7rem;
+        font-weight: 300;
+        padding-bottom: 1.5rem;
+        font-family: $font-text;
+        line-height: 2.5rem;
+        letter-spacing: .05rem;
+      }
     }
   }
 
@@ -39,12 +61,149 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 6rem;
     grid-auto-rows: minmax(100px, auto);
+    padding: 0 11rem;
 
     &--elements {
-      border: 3px solid palevioletred;
-      border-radius: .5rem;
-      height: 35vh;
-      width: 20vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 50px -25px black;
+      border-radius: .3rem;
+      height: 45vh;
+      letter-spacing: .1rem;
+      font-family: $font-text;
+      font-weight: 300;
+      font-size: 1.5rem;
+      color: white;
+    }
+
+    .one {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../parkiet.jpg);
+      background-size: 100% 100%;
+    }
+
+    .two {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../kafelki.jpg);
+      background-size: contain;
+    }
+
+    .three {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../kafle.jpg);
+      background-size: cover;
+    }
+
+    .four {
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../okna.jpg);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
+
+    .five {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../meble.jpg);
+      background-size: cover;
+      background-position: -4rem;
+    }
+
+    .six {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../wykończenia.jpg);
+      background-size: cover;
     }
   }
+}
+
+@media (max-width: 792px) {
+  .services {
+      padding: 5.5rem 0 3rem 0;
+  
+      .container {
+        height: 32vh;
+      }
+
+      .reverse{
+        flex-direction: column-reverse
+      }
+  
+      &_heading {
+        @include mobileHeading;
+      }
+  
+      &_heading-two {
+        @include mobileHeading;
+        font-size: 2.2rem;
+      }
+  
+      &_content {
+        margin-bottom: 2rem;
+        padding: .5rem;
+        display: flex;
+        flex-direction: column;
+  
+        &--image {
+          height: 30vh;
+          margin-top: 1rem;
+        }
+  
+        &--heading {
+          font-size: 1.4rem;
+          margin-bottom: 2rem;
+          padding-top: 2rem;
+          border-bottom: 4px solid map.get($colors, accent-color);
+        }
+  
+        &--details {  
+          li {
+            font-size: 1.1rem;
+            padding-bottom: 1rem;
+            line-height: 1.8rem;
+          }
+        }
+      }
+  
+      &_grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1.5rem;
+        padding: 0 1.5rem;
+  
+        &--elements {
+          height: 15vh;
+          font-size: 1rem;
+        }
+
+        .one {
+          background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../parkiet.jpg);
+          // background-size: 100% 100%;
+          background-size: cover;
+          background-position: 0 -4rem;
+        }
+
+        .two {
+          background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../kafelki.jpg);
+          background-size: cover;
+          background-position: 0 -3rem;
+        }
+
+        .three {
+          background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../kafle.jpg);
+          background-size: cover;
+        }
+
+        .four {
+          background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../okna.jpg);
+          background-size: cover;
+          background-position: 0 -14rem;
+        }
+
+        .five {
+          background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../meble.jpg);
+          background-size: cover;
+          background-position: 0 -3rem;
+        }
+
+        .six {
+          background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../wykończenia.jpg);
+          background-size: cover;
+          background-position: 0 -2.3rem;
+        }
+      }
+    }
 }

@@ -3,13 +3,22 @@ const Landing = () => {
     <div className="landing" id="landing">
       <h1 className="landing_heading">FIRMA SERLO</h1>
       <p className="landing_paragraph">
-        Nasza firma świadczy usługi na terenie Warszawy i, w zależności od powierzchni, w promieniu 100km od niej. 
-        Choć firma jest na rynku od niedawna, wszyscy nasi pracownicy mają wieloletnie doświadczenie zdobyte w 
-        branży remontowo-budowlanej. Każdy bierze swoją pracę na poważnie i przykłada jak największą uwagę na 
-        staranne i porządne wykonanie powierzonego zlecenia. Jakość wykonania, duże doświadczenie i zgrany zespół 
-        to jedne z powodów, dla których warto nas wybrać.
+        {/* Jesteśmy małą firmą świadczącą usługi w branży remontowo-wykończeniowej
+        na terenie i w okolicach* Warszawy. Nasi
+        pracownicy posiadają duże doświadczenie, zdobyte wieloletnią pracą w tej
+        dziedzinie. Przykładamy ogromną uwagę na staranne i rzetelne wykonanie
+        powierzonego zlecenia. Jakość wykonania, duże doświadczenie i zgrany
+        zespół to jedne z powodów, dla których warto nas wybrać.*/}
+        Jesteśmy małą firmą świadczącą usługi w branży remontowo-wykończeniowej
+        na terenie Warszawy i w najbliższej okolicy<a href="#about" className="star">*</a>. Nasi
+        pracownicy mają duże doświadczenie, zdobyte dzięki wieloletniej pracy w
+        tej branży. Starannie i rzetelnie wykonujemy powierzone zlecenia. Jakość
+        wykonania, doświadczenie i zgrany zespół to powody, dla których warto
+        nas wybrać.
       </p>
-      <button className="landing_button btn">SKONTAKTUJ SIĘ</button>
+      <a href="#contact" className="landing_button btn">
+        SKONTAKTUJ SIĘ
+      </a>
     </div>
   );
 };

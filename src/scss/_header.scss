@@ -1,17 +1,21 @@
 @use "sass:map";
 
 .header {
-  padding: 0 5rem;
+  padding: 0 5rem 0 4rem;
   height: 9vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 5px 10px grey;
+  box-shadow: 0 5px 10px rgb(143, 143, 143);
   position: fixed;
   left: 0;
   right: 0;
   top: 0;
-  background-color: rgb(206, 170, 182);
+  background-color: map.get($colors, background-color);
+
+  &_logo {
+    height: 5.8rem;
+  }
 
   .navigation {
     display: flex;
@@ -19,22 +23,19 @@
 
     &_link {
       text-decoration: none;
-      font-size: 1.2rem;
-      border-bottom: 3px solid transparent;
+      font-size: 1.1rem;
+      border-bottom: 4px solid transparent;
       outline: 0;
-          color: rgb(48, 48, 48);
+      color: rgb(48, 48, 48);
+      font-family: $font-text;
 
       &:hover {
-        color: aqua;
+        border-bottom: 4px solid map.get($colors, accent-color);
       }
 
       &:active {
-        color: yellow;
+        border-bottom: 4px solid map.get($colors, background-color); 
       }
-    }
-
-    .active {
-      color: red;
     }
   }
 
@@ -45,7 +46,12 @@
 
   @media (max-width: 792px) {
 
-    padding: 0 2rem;
+    padding: 0 2rem 0 1rem;
+    width: 100%;
+
+    &_logo {
+      height: 4.5rem;
+    }
 
     .computerNavigation {
       display: none;
@@ -53,16 +59,15 @@
 
     .mobileNavigation {
       display: flex;
-      height: 9vh;
 
       .icon {
-        width: 100%;
-        cursor: pointer;
         font-size: 2.2rem;
         align-self: center;
       }
 
       .navigation {
+        border-top: 3px solid map.get($colors, accent-color);
+        background-color: map.get($colors, background-color);
         box-sizing: border-box;
         flex-direction: column;
         align-items: center;

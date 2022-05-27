@@ -13,20 +13,13 @@ const Contact = () => {
 
   return (
     <div className="contact" id="contact">
-      <div className="contact_heading">
-        <h2 className="contact_heading--h2">MASZ PYTANIA? DZWOŃ I PISZ!</h2>
-
-        {/* <h3 className="contact_heading--h3">
-          Śmiało pisz lub dzwoń w sprawie jakichkolwiek pytań lub porad. Bardzo
-          chętnie odpowiemy i doradzimy :)
-        </h3> */}
-      </div>
+      <h2 className="contact_heading">MASZ PYTANIA? DZWOŃ I PISZ!</h2>
       <div className="contact_information">
         <div>
           <p className="contact_information--name">Firma Serlo</p>
           <p className="contact_information--nip">
             {" "}
-            NIP: xxxxxx, REGON: xxxxxxx
+            NIP: 1182237322 , REGON: 521346330
           </p>
           <div className="contact_information--details">
             {phoneIcon}
@@ -42,13 +35,13 @@ const Contact = () => {
               href="https://www.facebook.com/profile.php?id=100079474383115"
               className="contact_information--link"
             >
-              kliknij
+              KLIKNIJ
             </a>
           </div>
           <div className="contact_information--details">
             {mapIcon}
             <p className="contact_information--paragraph">
-              ul. Tadeusza Gajcego 7/156, 01-944 Warszawa
+              ul. Tadeusza Gajcego 7/156,<br/>01-944 Warszawa
             </p>
           </div>
         </div>

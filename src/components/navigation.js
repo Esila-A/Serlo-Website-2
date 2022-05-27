@@ -1,36 +1,36 @@
-import { HashLink as NavLink } from "react-router-hash-link";
+import { HashLink } from "react-router-hash-link";
 
 const Navigation = (props) => {
   return (
     <nav className="navigation">
-      <NavLink
-        to="/#landing"
+      <HashLink
+        to="#landing"
         className="navigation_link"
         onClick={() => props.isMobilePhone && props.closeMenu()}
       >
         Główna
-      </NavLink>
-      <NavLink
-        to="/#services"
+      </HashLink>
+      <HashLink
+        to="#services"
         className="navigation_link"
         onClick={() => props.isMobilePhone && props.closeMenu()}
       >
         Usługi
-      </NavLink>
-      <NavLink
-        to="/#about"
+      </HashLink>
+      <HashLink
+        to="#about"
         className="navigation_link"
         onClick={() => props.isMobilePhone && props.closeMenu()}
       >
         O nas
-      </NavLink>
-      <NavLink
-        to="/#contact"
+      </HashLink>
+      <HashLink
+        to="#contact"
         className="navigation_link"
         onClick={() => props.isMobilePhone && props.closeMenu()}
       >
         Kontakt
-      </NavLink>
+      </HashLink>
 
       {/* <a href="#landing" className="navigation_link" onClick={() => props.isMobilePhone && props.closeMenu()}>Główna</a>
         <a href="#services" className="navigation_link" onClick={() => props.isMobilePhone && props.closeMenu()}>Usługi</a>

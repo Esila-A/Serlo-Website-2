@@ -7,7 +7,7 @@ import Services from "./components/services";
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Header />
       <Landing />
       <Services />

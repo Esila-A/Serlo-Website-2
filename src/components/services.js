@@ -7,33 +7,84 @@ const Services = () => {
     <div className="services" id="services">
       <h2 className="services_heading">NASZE USŁUGI</h2>
       <div className="services_content">
-        <h3 className="services_content--heading">CYKLINOWANIE PODŁÓG</h3>
+        <div className="services_content--details">
+          <h3 className="services_content--heading">RENOWACJA PARKIETÓW</h3>
+          <ul>
+            <li>cyklinowanie</li>
+            <li>bejcowanie</li>
+            <li>lakierowanie</li>
+            <li>ocieplanie</li>
+          </ul>
+        </div>
         <div className="container">
-          <img src={cyklinowanie} className="services_content--image" />
+          <img
+            src={cyklinowanie}
+            className="services_content--image"
+            alt="cyklinowanie"
+          />
+        </div>
+      </div>
+      <div className="services_content reverse">
+        <div className="container">
+          <img
+            src={łazienka}
+            className="services_content--image"
+            alt="łazienka"
+          />
+        </div>
+        <div className="services_content--details">
+          <h3 className="services_content--heading">REMONT ŁAZIENEK</h3>
+          <ul>
+            <li>montaż armatury</li>
+            <li>
+              modyfikacja istniejących instalacji
+              <br />
+              hydraulicznych i elektrycznych
+            </li>
+          </ul>
         </div>
       </div>
       <div className="services_content">
-        <div className="container">
-          <img src={łazienka} className="services_content--image" />
+        <div className="services_content--details">
+          <h3 className="services_content--heading">
+            MALOWANIE ŚCIAN I SUFITÓW
+          </h3>
+          <ul>
+            <li>zrywanie tapet</li>
+            <li>gruntowanie</li>
+            <li>malowanie</li>
+          </ul>
         </div>
-        <h3 className="services_content--heading">REMONT ŁAZIENEK</h3>
-      </div>
-      <div className="services_content">
-        <h3 className="services_content--heading">MALOWANIE ŚCIAN I SUFITÓW</h3>
         <div className="container">
-          <img src={malowanie} className="services_content--image" />
+          <img
+            src={malowanie}
+            className="services_content--image"
+            alt="malowanie"
+          />
         </div>
       </div>
       <h3 className="services_heading-two">POZOSTAŁE USŁUGI</h3>
       <div className="services_grid">
-        <div className="services_grid--elements">USŁUGI HYDRAULICZNE<br/>DLA ŁAZIENEK</div>
-        <div className="services_grid--elements">BEJCOWANIE</div>
-        <div className="services_grid--elements">UKŁADANIE PARKIETÓW</div>
-        <div className="services_grid--elements">WYMIANA DRZWI<br/>I OKIEN</div>
-        <div className="services_grid--elements">USŁUGI WYKOŃCZENIOWE</div>
-        <div className="services_grid--elements">UKŁADANIE PŁYTEK<br/>I PANELI</div>
-        <div className="services_grid--elements">SKŁADANIE MEBLI</div>
-        <div className="services_grid--elements">UKŁADANIE PARKIETÓW</div>
+        <div className="services_grid--elements one">
+          UKŁADANIE
+          <br />
+          NOWYCH PARKIETÓW
+        </div>
+        <div className="services_grid--elements two">
+          UKŁADANIE PŁYTEK
+          <br />I PANELI
+        </div>
+        <div className="services_grid--elements three">
+          UKŁADANIE PŁYT
+          <br />
+          WIELKOFORMATOWYCH
+        </div>
+        <div className="services_grid--elements four">
+          WYMIANA DRZWI
+          <br />I OKIEN
+        </div>
+        <div className="services_grid--elements five">SKŁADANIE MEBLI</div>
+        <div className="services_grid--elements six">USŁUGI WYKOŃCZENIOWE</div>
       </div>
     </div>
   );
