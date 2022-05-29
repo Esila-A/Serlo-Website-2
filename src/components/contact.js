@@ -34,6 +34,8 @@ const Contact = () => {
             <a
               href="https://www.facebook.com/profile.php?id=100079474383115"
               className="contact_information--link"
+              target="_blank"
+              rel="noreferrer"
             >
               KLIKNIJ
             </a>
@@ -41,7 +43,9 @@ const Contact = () => {
           <div className="contact_information--details">
             {mapIcon}
             <p className="contact_information--paragraph">
-              ul. Tadeusza Gajcego 7/156,<br/>01-944 Warszawa
+              ul. Tadeusza Gajcego 7/156,
+              <br />
+              01-944 Warszawa
             </p>
           </div>
         </div>
