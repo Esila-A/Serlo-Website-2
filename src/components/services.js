@@ -1,6 +1,6 @@
-import cyklinowanie from "../cyklinowanie.jpeg";
-import łazienka from "../łazienka.jpg";
-import malowanie from "../malowanie.jpg"
+import cyklinowanie from "../images/cyklinowanie.jpeg";
+import łazienka from "../images/łazienka.jpg";
+import malowanie from "../images/malowanie.jpg"
 
 const Services = () => {
   return (

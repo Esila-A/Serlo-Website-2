@@ -78,34 +78,34 @@
     }
 
     .one {
-      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../parkiet.jpg);
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/parkiet.jpg);
       background-size: 100% 100%;
     }
 
     .two {
-      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../kafelki.jpg);
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/kafelki.jpg);
       background-size: contain;
     }
 
     .three {
-      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../kafle.jpg);
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/kafle.jpg);
       background-size: cover;
     }
 
     .four {
-      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../okna.jpg);
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/okna.jpg);
       background-size: 100% 100%;
       background-repeat: no-repeat;
     }
 
     .five {
-      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../meble.jpg);
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/meble.jpg);
       background-size: cover;
       background-position: -4rem;
     }
 
     .six {
-      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../wykończenia.jpg);
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/wykończenia.jpg);
       background-size: cover;
     }
   }
@@ -170,36 +170,26 @@
         }
 
         .one {
-          background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../parkiet.jpg);
           background-size: cover;
           background-position: 0 -4rem;
         }
 
         .two {
-          background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../kafelki.jpg);
           background-size: cover;
           background-position: 0 -3rem;
         }
 
-        .three {
-          background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../kafle.jpg);
-          background-size: cover;
-        }
-
         .four {
-          background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../okna.jpg);
           background-size: cover;
           background-position: 0 -14rem;
         }
 
         .five {
-          background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../meble.jpg);
           background-size: cover;
           background-position: 0 -3rem;
         }
 
         .six {
-          background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../wykończenia.jpg);
           background-size: cover;
           background-position: 0 -2.3rem;
         }
@@ -288,39 +278,29 @@
         color: white;
       }
 
-                .one {
-                  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../parkiet.jpg);
-                  background-size: cover;
-                  background-position: 0 0;
-                }
-        
-                .two {
-                  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../kafelki.jpg);
-                  background-size: cover;
-                  background-position: 0 0;
-                }
-        
-                .three {
-                  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../kafle.jpg);
-                  background-size: cover;
-                }
-        
-                .four {
-                  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../okna.jpg);
-                  background-size: cover;
-                }
-        
-                .five {
-                  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../meble.jpg);
-                  background-size: cover;
-                  background-position: 0 0;
-                }
-        
-                .six {
-                  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../wykończenia.jpg);
-                  background-size: cover;
-                  background-position: 0 0;
-                }    
-              }
+      .one {
+        background-size: cover;
+        background-position: 0 0;
+      }
+
+      .two {
+        background-size: cover;
+        background-position: 0 0;
+      }
+
+      .four {
+        background-size: cover;
+      }
+
+      .five {
+        background-size: cover;
+        background-position: 0 0;
+      }
+
+      .six {
+        background-size: cover;
+        background-position: 0 0;
+      }    
+    }
   }
 }

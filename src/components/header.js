@@ -1,6 +1,6 @@
 import ComputerNav from "./computerNav";
 import MobileNav from "./mobileNav";
-import logo from "../logo.png"
+import logo from "../images/logo.png"
 
 const Header = () => {
   return (

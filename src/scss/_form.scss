@@ -2,7 +2,6 @@
 
 
 .form {
-
   &_content {
     display: flex;
     flex-direction: column;
@@ -50,7 +49,6 @@
       }
     }
   }
-
 
   .submit {
     @include btn;
@@ -128,7 +126,7 @@
       margin-top: 1.5rem;
       align-self: center;
       font-size: 1.1rem;
-      padding: .8rem 1.8rem;
+      padding: .7rem 1.8rem;
     }
   }
 
@@ -140,88 +138,17 @@
 @media (min-width: 792px) and (max-width: 1100px) {
 
   .form {
-    &_content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    .requests {
-      display: flex;
-      flex-direction: column;
-
-      .text {
-        @include text;
-        padding-bottom: .5rem;
-        font-weight: 300;
-      }
-
-      .input-fields {
-        box-sizing: border-box;
-        width: 50vw;
-        background-color: map.get($colors, main-color);
-        border: 2px solid #b7b1ab;
-        border-radius: 15px;
-        padding: 1rem;
-        color: map.get($colors, font-second-color);
-
-        &::placeholder {
-          color: map.get($colors, font-second-color);
-          font-family: $font-text;
-        }
-
-        &--one {
-          height: 2.5rem;
-          margin-bottom: 2rem;
-        }
-
-        &--two {
-          height: 14rem;
-        }
-
-        &:focus {
-          border: 2px solid map.get($colors, font-second-color);
-        }
-
-        resize: none;
-      }
-    }
-  }
-
     .submit {
-      @include btn;
-      margin-top: 2rem;
-      align-self: flex-end;
       font-size: 1.5rem;
       padding: .8rem 1.8rem;
     }
 
     .positive {
-      font-size: 1.5rem;
-      padding: .9rem 2rem;
-      border: 3px solid map.get($colors, accent-color);
-      border-radius: 2rem;
-      font-family: $font-text;
-      letter-spacing: .1rem;
-      margin-top: 2rem;
-      align-self: flex-end;
-      color: black;
+      padding: .7rem 1.8rem;
     }
 
     .negative {
-      font-size: 1.5rem;
-      padding: .9rem 2rem;
-      border: 3px solid map.get($colors, accent-color);
-      border-radius: 2rem;
-      font-family: $font-text;
-      letter-spacing: .1rem;
-      margin-top: 2rem;
-      align-self: flex-end;
-      color: black;
-
-      &:hover {
-        border: 3px solid map.get($colors, font-second-color);
-      }
+      padding: .7rem 1.8rem;
     }
   }
 

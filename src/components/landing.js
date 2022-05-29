@@ -4,7 +4,7 @@ const Landing = () => {
       <h1 className="landing_heading">FIRMA SERLO</h1>
       <p className="landing_paragraph">
         Jesteśmy małą firmą świadczącą usługi w branży remontowo-wykończeniowej
-        na terenie Warszawy i w najbliższej okolicy<a href="#about" className="star">*</a>. Nasi
+        na terenie Warszawy i w najbliższej okolicy. Nasi
         pracownicy mają duże doświadczenie, zdobyte dzięki wieloletniej pracy w
         tej branży. Starannie i rzetelnie wykonujemy powierzone zlecenia. Jakość
         wykonania, doświadczenie i zgrany zespół to powody, dla których warto
