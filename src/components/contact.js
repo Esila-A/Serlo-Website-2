@@ -27,7 +27,9 @@ const Contact = () => {
           </div>
           <div className="contact_information--details">
             {mailIcon}
-            <p className="contact_information--paragraph">kontakt@serlo.pl</p>
+            <p className="contact_information--paragraph">
+              kontakt.serlo@gmail.com
+            </p>
           </div>
           <div className="contact_information--details">
             {facebookIcon}
