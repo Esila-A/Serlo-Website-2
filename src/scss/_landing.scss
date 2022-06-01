@@ -1,12 +1,11 @@
 @use "sass:map";
 
 .landing {
-  padding: 11rem 10rem 0 10rem;
+  padding: 11rem 10rem 10rem 10rem;
   text-align: center;
   background: linear-gradient(rgba(255, 255, 255, 0.4) 70%, rgba(239, 237, 237) 100%), url(../images/podłoga.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
 
   &_heading {
     @include heading;
