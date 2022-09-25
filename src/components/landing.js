@@ -1,4 +1,4 @@
-const Landing = () => {
+const DashboardLanding = () => {
   return (
     <div className="landing" id="landing">
       <h1 className="landing_heading">FIRMA SERLO</h1>
@@ -17,4 +17,4 @@ const Landing = () => {
   );
 };
 
-export default Landing;
+export default DashboardLanding;

@@ -5,7 +5,7 @@ import { RiMapPin2Fill } from "react-icons/ri";
 
 import Form from "./form";
 
-const Contact = () => {
+const DashboardContact = () => {
   const phoneIcon = <FaPhoneAlt className="icon" />;
   const mailIcon = <IoMdMail className="icon" />;
   const facebookIcon = <FaFacebook className="icon" />;
@@ -18,7 +18,6 @@ const Contact = () => {
         <div>
           <p className="contact_information--name">Firma Serlo</p>
           <p className="contact_information--nip">
-            {" "}
             NIP: 1182237322 , REGON: 521346330
           </p>
           <div className="contact_information--details">
@@ -57,4 +56,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default DashboardContact;

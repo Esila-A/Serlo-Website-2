@@ -2,7 +2,7 @@ import cyklinowanie from "../images/cyklinowanie.jpeg";
 import łazienka from "../images/łazienka.jpg";
 import malowanie from "../images/malowanie.jpg"
 
-const Services = () => {
+const DashboardServices = () => {
   return (
     <div className="services" id="services">
       <h2 className="services_heading">NASZE USŁUGI</h2>
@@ -90,4 +90,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default DashboardServices;

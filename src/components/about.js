@@ -2,7 +2,7 @@ import { BsFillChatLeftDotsFill } from "react-icons/bs";
 import { FaFileInvoiceDollar } from "react-icons/fa";
 import { BsCreditCard2BackFill } from "react-icons/bs";
 
-const About = () => {
+const DashboardAbout = () => {
   const chatIcon = <BsFillChatLeftDotsFill className="icon" />;
   const invoiceIcon = <FaFileInvoiceDollar className="icon" />;
   const cardIcon = <BsCreditCard2BackFill className="icon" />;
@@ -55,4 +55,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default DashboardAbout;

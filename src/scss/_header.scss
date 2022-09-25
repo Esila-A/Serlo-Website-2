@@ -19,7 +19,7 @@
 
   .navigation {
     display: flex;
-    gap: 10vw;
+    gap: 6vw;
 
     &_link {
       text-decoration: none;
@@ -31,10 +31,6 @@
 
       &:hover {
         border-bottom: 4px solid map.get($colors, accent-color);
-      }
-
-      &:active {
-        border-bottom: 4px solid map.get($colors, background-color); 
       }
     }
   }
