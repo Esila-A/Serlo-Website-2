@@ -13,7 +13,6 @@ const DashboardServices = () => {
             <li>cyklinowanie</li>
             <li>bejcowanie</li>
             <li>lakierowanie</li>
-            <li>ocieplanie</li>
           </ul>
         </div>
         <div className="container">

@@ -14,6 +14,10 @@ import SevenBefore from "../example images/7 przed.jpeg";
 import SevenAfter from "../example images/7 po.jpeg";
 import EightBefore from "../example images/8 przed.jpeg";
 import EightAfter from "../example images/8 po.jpeg";
+import NineBefore from "../example images/9 przed.jpeg";
+import NineAfter from "../example images/9 po.jpeg";
+import TenBefore from "../example images/10 przed.jpeg";
+import TenAfter from "../example images/10 po.jpeg";
 
 
 export const ExamplesList = [
@@ -64,5 +68,17 @@ export const ExamplesList = [
   },
   {
     image: EightAfter,
+  },
+  {
+    image: NineBefore,
+  },
+  {
+    image: NineAfter,
+  },
+  {
+    image: TenBefore,
+  },
+  {
+    image: TenAfter,
   },
 ];

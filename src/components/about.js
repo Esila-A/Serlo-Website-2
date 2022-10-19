@@ -35,7 +35,7 @@ const DashboardAbout = () => {
         <div className="about_points--details">
           {invoiceIcon}
           <p className="about_paragraph about_paragraph--withIcon">
-            Na życzenie wystawiamy fakturę VAT.
+            Na życzenie wystawiamy fakturę.
           </p>
         </div>
         <div className="about_points--details">

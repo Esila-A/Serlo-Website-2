@@ -22,7 +22,7 @@ const DashboardContact = () => {
           </p>
           <div className="contact_information--details">
             {phoneIcon}
-            <p className="contact_information--paragraph">+48 510 573 865</p>
+            <p className="contact_information--paragraph">+48 729 520 949</p>
           </div>
           <div className="contact_information--details">
             {mailIcon}
