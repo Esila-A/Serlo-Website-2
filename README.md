@@ -9,7 +9,8 @@ Website created for a renovation and finishing company using JavaScript and Reac
 
 ### About 
 This is a website I created for my second client. I was asked to both design and write it. I went for a minimalistic, clean and straightforward style.<br/><br/>
-As the client asked for a simple website that would inform about the services offered in a clear and easy way, I created a one-page website divided into three sections: information about the types of services offered, short information about the company and a contact form. I also made a separate page for example photos of the works they've done.<br/><br/>
+As the client asked for a simple website that would inform about the services offered in a clear and easy way, I created a one-page website divided into three sections: presentation of services offered, short information about the company, and a contact form. I also made a separate page with a photo gallery of their 
+previous renovation projects.<br/><br/>
 I connected the form to the client's email address with Emailjs, using the instructions provided on their website. I finished everything with reCaptcha to protect the e-mail from unnecessary spam.
 
 ### Technologies and libraries used
