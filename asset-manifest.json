@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/serlo-website/static/css/main.25fda71d.css",
+    "main.css": "/serlo-website/static/css/main.ac661482.css",
     "main.js": "/serlo-website/static/js/main.4ab21a9d.js",
     "static/media/video.mov": "/serlo-website/static/media/video.9f168c50273bc7140425.mov",
     "static/media/kafelki.jpg": "/serlo-website/static/media/kafelki.fb1435c114cfba900c56.jpg",
@@ -35,11 +35,11 @@
     "static/media/łazienka.jpg": "/serlo-website/static/media/łazienka.c4ce87433adaaaecff77.jpg",
     "static/media/logo.png": "/serlo-website/static/media/logo.4bb1479241d22606c4a7.png",
     "index.html": "/serlo-website/index.html",
-    "main.25fda71d.css.map": "/serlo-website/static/css/main.25fda71d.css.map",
+    "main.ac661482.css.map": "/serlo-website/static/css/main.ac661482.css.map",
     "main.4ab21a9d.js.map": "/serlo-website/static/js/main.4ab21a9d.js.map"
   },
   "entrypoints": [
-    "static/css/main.25fda71d.css",
+    "static/css/main.ac661482.css",
     "static/js/main.4ab21a9d.js"
   ]
 }
