@@ -83,10 +83,10 @@
       border: 3px solid map.get($colors, font-second-color);
     }
   }
-}
 
-.grecaptcha-badge {
-  opacity: 0;
+  .grecaptcha-badge {
+    opacity: 0;
+  }
 }
 
 @media (max-width: 792px) {
